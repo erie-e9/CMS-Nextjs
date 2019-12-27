@@ -1,0 +1,24 @@
+{
+  "name": "cmsbackend",
+  "version": "1.0.0",
+  "description": "A practical and complete boilerplate powered with NextJS + TypeScript. A bundle based on PWA + SSR + GraphQL + I18N etc...",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --ext js --exec babel-node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.9.14",
+    "graphql": "^14.5.8",
+    "pg": "^7.15.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7"
+  }
+}
