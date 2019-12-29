@@ -1,12 +1,14 @@
+import { encrypt } from '../utils/security'
+
 export default (sequelize, { UUID, UUIDV4, STRING, BOOLEAN }) => {
-    const User = sequelize.define('User', {
-        id: {
+    const User = sequelize.define('user', {
+        _id: {
             type: UUID,
             primaryKey: true,
             allowNull: false,
             defaultValue: UUIDV4()
         },
-        username: {
+        uusername: {
             type: STRING,
             allowNull: false,
             unique: true,
@@ -21,22 +23,22 @@ export default (sequelize, { UUID, UUIDV4, STRING, BOOLEAN }) => {
                 }
             }
         },
-        // ufirstname: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ufatherlastname: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // umotherlastname: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uavatar: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
+        ufirstname: {
+            type: STRING,
+            allowNull: false,
+        },
+        ufatherlastname: {
+            type: STRING,
+            allowNull: false,
+        },
+        umotherlastname: {
+            type: STRING,
+            allowNull: true,
+        },
+        uavatar: {
+            type: STRING,
+            allowNull: false,
+        },
         uemail: {
             type: STRING,
             allowNull: false,
@@ -49,66 +51,30 @@ export default (sequelize, { UUID, UUIDV4, STRING, BOOLEAN }) => {
             } 
             
         },
-        // uphone: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ucellphone: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
+        uphone: {
+            type: STRING,
+            allowNull: true,
+        },
+        ucellphone: {
+            type: STRING,
+            allowNull: false,
+        },
         upassword: {
             type: STRING,
             allowNull: false,
         },
-        // ubirthdate: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ugender: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // usexualorientation: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ueyescolor: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uskincomplexion: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ulocation: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ucurp: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // urfc: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // upassport: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uvisa: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // ubirthcertificate: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uposibilitytravel: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
+        ubirthdate: {
+            type: STRING, //DATETIME
+            allowNull: false,
+        },
+        ugender: {
+            type: STRING,
+            allowNull: false,
+        },
+        ulocation: {
+            type: STRING,
+            allowNull: false,
+        },
         uprivilege: {
             type: STRING,
             allowNull: false,
@@ -119,40 +85,45 @@ export default (sequelize, { UUID, UUIDV4, STRING, BOOLEAN }) => {
             allowNull: false,
             defaultValue: false
         },
-        // uadmisiondate: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uegressdate: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uemailverified: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uisenabled: {
-        //     type: BOOLEAN,
-        //     allowNull: false,
-        //     defaultValue: false
-        // },
-        // uregisteredbyuser: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // uupdatedbyuser: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // udeletedbyuser: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        // udatedeleted: {
-        //     type: STRING,
-        //     allowNull: false,
-        // },
-        
+        uadmisiondate: {
+            type: STRING, //DATETIME
+            allowNull: false,
+        },
+        uegressdate: {
+            type: STRING, //DATETIME
+            allowNull: true,
+        },
+        uemailverified: {
+            type: BOOLEAN,
+            allowNull: false,
+        },
+        uisenabled: {
+            type: BOOLEAN,
+            allowNull: false,
+            defaultValue: false
+        },
+        uregisteredbyuser: {
+            type: STRING,
+            allowNull: false,
+        },
+        uupdatedbyuser: {
+            type: STRING,
+            allowNull: true,
+        },
+        udeletedbyuser: {
+            type: STRING,
+            allowNull: true,
+        },
+        udatedeleted: {
+            type: STRING, //DATETIME
+            allowNull: true,
+        }
+    }, {
+        hooks: {
+            beforeCreate: user => {
+                user.upassword = encrypt(user.upassword)
+            }
+        }
     })
 
     User.associate = models => {

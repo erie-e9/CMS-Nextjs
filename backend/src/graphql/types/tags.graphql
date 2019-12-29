@@ -1,0 +1,8 @@
+type Tag {
+    _id: UUID!
+    name: String!
+}
+
+input createTagInput {
+    name: String!
+}

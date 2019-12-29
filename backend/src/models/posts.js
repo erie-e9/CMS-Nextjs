@@ -1,6 +1,6 @@
 export default (sequelize, { UUID, UUIDV4, STRING, BOOLEAN, TEXT }) => {
-    const Post = sequelize.define('Post', {
-        id: {
+    const Post = sequelize.define('post', {
+        _id: {
             type: UUID,
             primaryKey: true,
             allowNull: false,
@@ -12,14 +12,15 @@ export default (sequelize, { UUID, UUIDV4, STRING, BOOLEAN, TEXT }) => {
         },
         slug: {
             type: STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true
         },
         readingTime: {
             type: STRING,
             allowNull: false,
             defaultValue: '3 min'
         },
-        body: {
+        content: {
             type: TEXT,
             allowNull: false
         },

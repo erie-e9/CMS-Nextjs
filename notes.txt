@@ -1,0 +1,4 @@
+https://www.youtube.com/watch?v=sFXLBLpo3kM&list=PLeWI3XlFEVOUtwkeZmAZ4j05ivcstQ2rS&index=3
+https://github.com/Eric-Andrade/UTyP/blob/master/backend/server/src/graphql/schema.js
+
+https://github.com/Urigo/merge-graphql-schemas/issues/308

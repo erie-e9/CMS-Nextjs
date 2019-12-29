@@ -1,0 +1,61 @@
+type User {
+    _id: UUID!
+    uusername: String!
+    ufirstname: String!
+    ufatherlastname: String!
+    umotherlastname: String
+    uavatar: String!
+    uemail: String!
+    uphone: String
+    ucellphone: String!
+    upassword: String!
+    ubirthdate: Datetime!
+    ugender: String!
+    ulocation: String!
+    uprivilege: String!
+    uactiveaccount: Boolean!
+    uadmisiondate: Datetime!
+    uegressdate: Datetime
+    uemailverified: Boolean!
+    uisenabled: Boolean!
+    uregisteredbyuser: String!
+    uupdatedbyuser: String
+    udeletedbyuser: String
+    udatedeleted: Datetime
+    createdAt: Datetime!
+    updatedAt: Datetime!
+    post: [Post!]
+}
+
+type Query {
+    getUsers: [User!]
+}
+
+type Mutation {
+    createUser(input: createUserInput): User!
+}
+
+input createUserInput {
+    uusername: String!,
+    ufirstname: String!,
+    ufatherlastname: String!,
+    umotherlastname: String,
+    uavatar: String!,
+    uemail: String!,
+    uphone: String,
+    ucellphone: String!,
+    upassword: String!,
+    ubirthdate: Datetime!,
+    ugender: String!,
+    ulocation: String!,
+    uprivilege: String!,
+    uactiveaccount: Boolean!,
+    uadmisiondate: Datetime!,
+    uegressdate: Datetime,
+    uemailverified: Boolean!,
+    uisenabled: Boolean!,
+    uregisteredbyuser: String!,
+    uupdatedbyuser: String,
+    udeletedbyuser: String,
+    udatedeleted: Datetime
+}

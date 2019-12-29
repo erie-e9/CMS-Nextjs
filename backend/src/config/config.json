@@ -8,7 +8,7 @@
         "password": "admin"
     },
     "security": {
-        "securityKey": "some-security-key",
+        "securityKey": "gR4phQl-security-key",
         "expiresIn": "7d"
     }
 }
