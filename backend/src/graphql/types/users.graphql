@@ -32,7 +32,9 @@ type Query {
 }
 
 type Mutation {
-    createUser(input: createUserInput): User!
+    createUser( input: createUserInput ): User!
+    loginUser( input: loginUserInput ): Auth!
+    
 }
 
 input createUserInput {
@@ -58,4 +60,13 @@ input createUserInput {
     uupdatedbyuser: String,
     udeletedbyuser: String,
     udatedeleted: Datetime
+}
+
+input loginUserInput {
+    uemail: String!
+    upassword: String!
+}
+
+type Auth {
+    token: String!
 }

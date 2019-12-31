@@ -37,6 +37,6 @@ const apolloServer = new ApolloServer({
     }
 })
 
-models.sequelize.sync({ alter: true, force: false }).then(() => {
+models.sequelize.sync({ alter: true, force: !true }).then(() => {
     apolloServer.listen(5000).then(({ url }) => console.log(`🚀 Server ready at ${url}`))
 })
