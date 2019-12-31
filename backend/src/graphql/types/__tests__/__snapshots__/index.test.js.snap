@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#typeDefs should match the GraphQL schema 1`] = `
+"type Hello {
+  message: String!
+}
+
+type Query {
+  sayHello(name: String!): Hello
+  getPosts: [Post!]
+  getUsers: [User!]
+}
+
+type Post {
+  _id: UUID!
+  userId: UUID!
+  title: String!
+  slug: String!
+  readingTime: String!
+  content: String!
+  language: String!
+  image: String!
+  published: Boolean!
+  createdAt: Datetime!
+  updatedAt: Datetime!
+  tags: [Tag!]
+}
+
+type Mutation {
+  createPost(input: createPostInput): Post!
+  createUser(input: createUserInput): User!
+  loginUser(input: loginUserInput): Auth!
+}
+
+input createPostInput {
+  userId: UUID!
+  title: String!
+  slug: String!
+  content: String!
+  tags: [createTagInput]
+}
+
+scalar UUID
+
+scalar Datetime
+
+type Tag {
+  _id: UUID!
+  name: String!
+}
+
+input createTagInput {
+  name: String!
+}
+
+type User {
+  _id: UUID!
+  uusername: String!
+  ufirstname: String!
+  ufatherlastname: String!
+  umotherlastname: String
+  uavatar: String!
+  uemail: String!
+  uphone: String
+  ucellphone: String!
+  upassword: String!
+  ubirthdate: Datetime!
+  ugender: String!
+  ulocation: String!
+  uprivilege: String!
+  uactiveaccount: Boolean!
+  uadmisiondate: Datetime!
+  uegressdate: Datetime
+  uemailverified: Boolean!
+  uisenabled: Boolean!
+  uregisteredbyuser: String!
+  uupdatedbyuser: String
+  udeletedbyuser: String
+  udatedeleted: Datetime
+  createdAt: Datetime!
+  updatedAt: Datetime!
+  post: [Post!]
+}
+
+input createUserInput {
+  uusername: String!
+  ufirstname: String!
+  ufatherlastname: String!
+  umotherlastname: String
+  uavatar: String!
+  uemail: String!
+  uphone: String
+  ucellphone: String!
+  upassword: String!
+  ubirthdate: Datetime!
+  ugender: String!
+  ulocation: String!
+  uprivilege: String!
+  uactiveaccount: Boolean!
+  uadmisiondate: Datetime!
+  uegressdate: Datetime
+  uemailverified: Boolean!
+  uisenabled: Boolean!
+  uregisteredbyuser: String!
+  uupdatedbyuser: String
+  udeletedbyuser: String
+  udatedeleted: Datetime
+}
+
+input loginUserInput {
+  uemail: String!
+  upassword: String!
+}
+
+type Auth {
+  token: String!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+"
+`;

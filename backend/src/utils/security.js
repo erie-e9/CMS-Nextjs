@@ -3,7 +3,7 @@ import { _security } from '../config'
 import { isString, isObject, isJson } from './is'
 
 export function encrypt(string) {
-    return crypto
+  return crypto
     .createHash('sha1')
     .update(`${_security().secretKey}${string.toString()}`)
     .digest('hex')
@@ -22,7 +22,7 @@ export function getBase64(value) {
 
   return buffer
 }
-  
+
 export function setBase64(value) {
   if (isObject(value)) {
     return Buffer.from(JSON.stringify(value)).toString('base64')
