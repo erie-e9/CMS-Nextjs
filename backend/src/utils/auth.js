@@ -11,8 +11,8 @@ export const createToken = async user => {
   const userData = {
     _id,
     uusername,
-	uemail,
-	uprivilege,
+    uemail,
+    uprivilege,
     uactiveaccount,
     token
   }
@@ -46,7 +46,7 @@ export const doLogin = async (uemail, upassword, models) => {
     throw new AuthenticationError('Your account is not activated yet')
   }
 
-  const [ token ] = await createToken(user)
+  const [token] = await createToken(user)
 
   return {
     token

@@ -10,6 +10,17 @@ const sequelize = new Sequelize(database, username, password, {
   }
 })
 
+sequelize
+  .authenticate()
+  .then(() => {
+    // eslint-disable-next-line no-console
+    console.log(`🚀 Connected successfuly to database`)
+  })
+  .catch(err => {
+    // eslint-disable-next-line no-console
+    console.error(`Error trying connecting to databse: ${err}`)
+  })
+
 // Import models
 const models = {
   Post: sequelize.import('./posts'),
