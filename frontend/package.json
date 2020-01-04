@@ -1,0 +1,26 @@
+{
+  "name": "cmsfrontend",
+  "version": "1.0.0",
+  "description": "A practical and complete boilerplate powered with NextJS + TypeScript. A bundle based on PWA + SSR + GraphQL + I18N etc...",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node src/server",
+    "build": "next build",
+    "start": "cross-env NODE_ENV=production babel-node src/server",
+    "nextbe": "next build && next export"
+  },
+  "author": "Eric Torres Andrade <erictorresandrade.1@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "next": "^9.1.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "babel-preset-next": "^1.2.0",
+    "cross-env": "^6.0.3"
+  }
+}
