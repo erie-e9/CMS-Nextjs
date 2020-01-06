@@ -7,13 +7,17 @@
     "dev": "babel-node src/server",
     "build": "next build",
     "start": "cross-env NODE_ENV=production babel-node src/server",
-    "nextbe": "next build && next export"
+    "nextbe": "next build && next export",
+    "analyze": "cross-env ANALYZE=true yarn build"
   },
   "author": "Eric Torres Andrade <erictorresandrade.1@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@next/bundle-analyzer": "^9.1.7",
+    "@zeit/next-sass": "^1.0.1",
     "express": "^4.17.1",
     "next": "^9.1.7",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
