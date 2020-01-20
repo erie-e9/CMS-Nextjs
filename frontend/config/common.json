@@ -1,0 +1,12 @@
+{
+    "serverPort": 3000,
+    "appName": "cms-nextjs",
+    "languages": {
+      "default": "es",
+      "list": ["es", "en"]
+    },
+    "security": {
+      "secretKey": "gR4phQl-security-key",
+      "expiresIn": "7d"
+    }
+  }

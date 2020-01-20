@@ -1,0 +1,19 @@
+{
+    "baseUrl": "https://frontend.erictorresandrade.now.sh",
+    "api": {
+      "uri": "https://frontend.erictorresandrade.now.sh/graphql",
+      "credentials": "same-origin"
+    },
+    "debug": false,
+    "cache": {
+      "enable": true,
+      "whitelist": []
+    },
+    "session": {
+      "cookieDomain": "https://frontend.erictorresandrade.now.sh",
+      "maxAge": 604800,
+      "cookiePrefix": "",
+      "path": "/",
+      "httpOnly": true
+    }
+}

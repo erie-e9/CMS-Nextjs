@@ -1,0 +1,97 @@
+// @import './contactus/socialnetworks/index.scss';
+// @import './contactus/index.scss';
+// @import './formcontactus/index.scss';
+// @import './links/index.scss';
+@import '../../../shared/styles/_dependencies.scss';
+
+footer {
+    min-height: auto;
+    background-color: $valhalla;
+    width: 100%;
+    display: block;
+}
+
+.footerWrapper {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0.7rem;
+    box-sizing: border-box;
+
+    
+    @include desktop {
+        width: 90%;
+    }
+
+    @include tablet {
+        width: 95%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.footerItem {
+    width: 33%;
+    padding: 0.7rem 1rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+    @include desktop {
+        width: 33%;
+        padding: 0.2rem;
+    }
+    
+    @include tablet {
+        width: 30%;
+        margin: 0px 10px;
+        padding: 0px 10px;
+    }
+    
+    @include mobile {
+        width: 100%;
+        margin: 0px 10px;
+        padding: 0px 10px;
+        align-items: flex-start;
+    }
+    
+    h2 {
+        font-size: $large;
+        color: $lightGray;
+        margin: 10px 0;
+        font-weight: $bold;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: $robinsEggBlue;
+        text-align: justify;
+        line-height: 1.5rem;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+
+.footerBottom {
+    height: 0.5rem;
+    padding: 0.5rem;
+    background-color:$turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p {
+        color: $haiti;
+        font-size: 0.8rem;
+        font-weight: $normal;
+
+        @include mobile {
+            font-size: $smaller;
+        }
+    }
+}

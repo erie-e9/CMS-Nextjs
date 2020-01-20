@@ -1,0 +1,216 @@
+@import '../../../../shared/styles/_dependencies.scss';
+
+$heightInput: 20px;
+
+.container {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formContent {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    height: 100vh;
+    width: 100vw;
+    grid-gap: 7rem;
+
+    @include desktop {
+        grid-template-columns: 1fr;
+    }
+    
+    @include tablet {
+    }
+    
+    @include mobile {
+    }
+
+}
+
+.login {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 250px;
+    transition: 0.2s;
+
+    @include desktop {
+        width: 250px;
+    }
+
+    @include tablet {
+        width: 210px;
+    }
+    
+    @include mobile {
+        display: none;
+    }
+
+}
+
+.loginWrapper {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+    height: auto;
+    padding: 2.5rem 1.2rem;
+    overflow: hidden;
+    background-color: $valhalla;
+    border: 0.5px solid $valhalla;
+
+    @include mobile {
+        width: 100%;    
+        height: auto;
+    }
+    
+    .loginForm {
+        flex-direction: column;
+        display: flex;
+        align-items: center;;
+        text-align: center;
+        width: 200px;
+        z-index: 100;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        .formInputWrapper {
+            width: 13.5rem;
+            min-height: 3.5rem;
+
+            @include desktop { 
+                width: 13.5rem;
+            }
+        
+            @include tablet {
+                width: 14rem;
+            }
+            
+            @include mobile {
+                width: 19rem;
+                min-height: 4rem;
+            }
+        }
+
+        // .error {
+        //     display: block;
+        //     text-align: right;
+        //     font-size: $small;
+        //     color: $lightGray;
+        //     font-family: $openSans, sans-serif;
+        //     transition: .5s;
+        //     // margin: 10px;
+
+        //     @include mobile {
+        //         font-size: $xSmall;
+        //     }
+        // }
+    }
+
+    .primaryNegaviteButton {
+        height: 25px;
+        width: 100%;
+        background-color: $white;
+        border-radius: 5px;
+        border: 0.5px solid $black;
+        color: $black;
+        font-size: $small;
+        font-weight: $normal;
+        margin: 5px;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .spanButton {
+        font-family: $poppins, sans-serif;
+        font-weight: 500;
+        color: $white;
+    }
+
+}
+
+.loginWrapperBottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: end;
+    margin-top: 1rem;
+    align-items: flex-end;
+
+    p, a {
+        line-height: 20px;
+
+        @include tablet {
+            line-height: 10px;
+        }
+
+        @include mobile {
+            line-height: 10px;
+        }
+    }
+
+    .forgotPassword {
+        // display: block;
+        text-align: right;
+        font-size: $small;
+        color: $lightGray;
+        font-family: $openSans, sans-serif;
+        transition: .3s;
+        margin: 5px 0;
+
+        @include mobile {
+            font-size: $small;
+            margin: 10px 0;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            color: $turquoise;
+        }
+    }
+    
+    .invitetoSignup {
+        font-size: $small;
+        color: $lightGray;
+        font-family: $openSans, sans-serif;
+
+        @include mobile {
+            margin: 5px 0;
+            padding: 5px 0;
+        }
+
+        .singup {
+            font-weight: $normal;
+            transition: 0.2s;
+            color: $turquoise;
+            
+            &:hover {
+                color: $java;
+            }
+        }
+    }
+
+}

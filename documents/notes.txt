@@ -1,0 +1,28 @@
+http://chir.ag/projects/name-that-color/#6195ED
+
+Fonts: [
+  Links: {
+    https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=es
+  },
+  Info: {
+    EOT solo es compatible con IE, 
+    TTF es parcialmente compatible con IE, 
+    WOFF es el que ofrece la compatibilidad más amplia, aunque no está disponible en algunos navegadores anteriores 
+    Y la compatibilidad en WOFF 2.0 se encuentra en desarrollo para muchos navegadores.
+  }
+]
+
+Fonts: https://google-webfonts-helper.herokuapp.com/fonts
+https://www.youtube.com/watch?v=JP8je89Nl9M&list=PLeWI3XlFEVOUtwkeZmAZ4j05ivcstQ2rS&index=4
+https://github.com/Eric-Andrade/UTyP/blob/master/backend/server/src/graphql/schema.js
+
+https://github.com/Urigo/merge-graphql-schemas/issues/308
+https://looka.com/blog/logo-color-combinations/
+Guide: https://www.storyblok.com/tp/next-js-react-guide
+YouTube {
+  Footer: https://www.youtube.com/watch?v=vsBaCblIOuQ
+  Navbar: https://www.youtube.com/watch?v=PwWHL3RyQgk
+  
+}
+
+https://hackernoon.com/react-form-validation-with-formik-and-yup-8b76bda62e10

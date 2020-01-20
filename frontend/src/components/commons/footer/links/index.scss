@@ -1,0 +1,64 @@
+@import '../../../../shared/styles/_dependencies.scss';
+
+.footerLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footerLink {
+    // display: block;
+    text-align: right;
+    font-size: $small;
+    color: $robinsEggBlue;
+    font-family: $openSans, sans-serif;
+    transition: .3s;
+    margin: 5px 0;
+
+    @include mobile {
+        font-size: $small;
+        margin: 5px 0;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.footerSubLink {
+    // display: block;
+    text-align: right;
+    font-size: $medium;
+    font-weight: 300;
+    color: $lightGray;
+    font-family: $openSans, sans-serif;
+    transition: .3s;
+    margin: 5px;
+    cursor: pointer;
+
+    @include mobile {
+        font-size: $medium;
+        margin: 5px;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.subitemsWrapper {
+    span:first-child {
+        margin: 5px 5px 5px 15px;
+    }
+}

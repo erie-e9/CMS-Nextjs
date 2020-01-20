@@ -1,0 +1,51 @@
+@import '../../../../shared/styles/_dependencies.scss';
+
+.formContactWrapper {
+    width: 70%;
+
+    @include desktop {
+        width: 70%
+    }
+    
+    @include tablet {
+        width: 80%
+    }
+
+    @include mobile {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.contactWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.formInputWrapper {
+    width: 13.5rem;
+    min-height: 3.5rem;
+
+    @include desktop { 
+        width: 13.5rem;
+    }
+
+    @include tablet {
+        width: 14rem;
+    }
+    
+    @include mobile {
+        width: 19rem;
+        min-height: 4rem;
+    }
+}
+
+.formContactButtonWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}

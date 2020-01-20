@@ -1,0 +1,75 @@
+@import '../../../../shared/styles/_dependencies.scss';
+
+.itemlink{
+    margin: 0.4125rem;
+
+    &:hover {
+        // margin: 5px;
+        font-size: $small;
+        color: $turquoise;
+        font-family: $openSans, sans-serif;
+        cursor: pointer;
+        // width: fit-content;
+        transition: 0.2s;
+    }
+}
+
+.userIcon {
+    margin: 0 0.55rem;
+    // height: 1.5rem;
+    width: 1.5rem;
+     
+    @include mobile {
+        margin: 0 0.45rem;
+    }
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.linkuserIcon {
+    margin: 0 auto;
+    height: 25px;
+    width: auto;
+}
+
+.notificationsIcon {
+    margin: 0 0.55rem;
+    height: 32px;
+    width: 32px;
+     
+    @include mobile {
+        margin: 0 0.45rem;
+    }
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.linknotificationsIcon {
+    margin: auto;
+    height: 30px;
+    width: auto;
+}
+
+.addIcon {
+    margin: 0 0.55rem;
+    // height: 1.875rem;
+    width: 1.875rem;
+ 
+    @include mobile {      
+        margin: 0 0.45rem;
+    }
+
+    &:hover {
+        color: $turquoise;
+    }
+}
+
+.linkaddIcon {
+    margin: auto;
+    height: 20px;
+    width: auto;
+}

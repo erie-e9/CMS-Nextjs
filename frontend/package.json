@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "cross-env NODE_ENV=production babel-node src/server",
     "nextbe": "next build && next export",
-    "analyze": "cross-env ANALYZE=true yarn build"
+    "analyze": "cross-env ANALYZE=true yarn build",
+    "svg-to-jsx": "svgr < public/images/svgr/notifications2.svg > src/components/commons/svgr/notifications2.jsx --svgo-config public/svgo.json --replace-attr-values '#041C3F={props.color}'",
+    "iconsgen": "real-favicon generate faviconDescription.json faviconData.json public/images/icons"
   },
   "author": "Eric Torres Andrade <erictorresandrade.1@gmail.com>",
   "license": "ISC",
@@ -16,15 +18,20 @@
     "@next/bundle-analyzer": "^9.1.7",
     "@zeit/next-sass": "^1.0.1",
     "express": "^4.17.1",
+    "fontfaceobserver": "^2.1.0",
     "next": "^9.1.7",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-hook-form": "^4.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/node": "^7.7.7",
+    "@svgr/cli": "^5.0.1",
+    "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-next": "^1.2.0",
-    "cross-env": "^6.0.3"
+    "cross-env": "^6.0.3",
+    "next-purgecss": "^3.1.2"
   }
 }

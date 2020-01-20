@@ -1,0 +1,54 @@
+@import '../../shared/styles/_dependencies.scss';
+
+$heightButton: 30px;
+
+.button {
+    width: 8rem;
+    height: $heightButton;
+    min-height: 1.5rem;
+    background-color: $turquoise;
+    // border-radius: $heightButton * 2;
+    border-radius: 3px;
+    border: 1px solid $turquoise;
+    margin: 0.7rem;
+    padding: 5px 15px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: 0.5s;
+    z-index: 999;
+    
+        @include tablet {
+            margin: 0.7rem;
+        }
+
+        @include mobile {
+            margin: 0.4rem;
+        }
+
+        .spanButton {
+            font-family: $poppins, sans-serif;
+            font-size: $small;
+            font-weight: $normal;
+            color: $valhalla;
+        }
+
+        &:hover {
+            background-color: $java;
+            border: 0.5px solid $java;
+            transition: 0.5s;
+        }
+
+        &:disabled {
+            background-color: transparent;
+            cursor: not-allowed;
+            border: 1px solid $turquoise;
+            
+            .spanButton {
+                color: $dustyGray;
+            }
+        }
+}

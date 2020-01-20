@@ -1,0 +1,23 @@
+@import '../../../../../shared/styles/_dependencies.scss';
+
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 0;
+
+    .socialNetwork {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        border: 1px solid $turquoise;
+        color: $white;
+        display: flex;
+        font-size: 0.7rem;
+        font-family: $poppins, sans-serif;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.5rem;
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "footerlinks": [
+        {
+            "key": "about",
+            "section": "About",
+            "link": "/about",
+            "as": "/about",
+            "icon": "",
+            "prefetch": false
+        },
+        {
+            "key": "title2",
+            "section": "Title2",
+            "link": "/title2",
+            "as": "/title2",
+            "icon": "bar-chart",
+            "prefetch": false,
+            "sublinks": [
+                {
+                    "key": "subitem1",
+                    "section": "Subitem1",
+                    "link": "/subitem1",
+                    "as": "/subitem1",
+                    "icon": "",
+                    "prefetch": false
+                },
+                {
+                    "key": "subitem2",
+                    "section": "Subitem2",
+                    "link": "/subitem2",
+                    "as": "/subitem2",
+                    "icon": "",
+                    "prefetch": false
+                },
+                {
+                    "key": "subitem3",
+                    "section": "Subitem3",
+                    "link": "/subitem3",
+                    "as": "/subitem3",
+                    "icon": "",
+                    "prefetch": false
+                }
+            ]
+        },
+        {
+            "key": "title3",
+            "section": "Title3",
+            "link": "/title3",
+            "as": "/title3",
+            "icon": "bar-chart",
+            "prefetch": false,
+            "sublinks": [
+                {
+                    "key": "subitem1",
+                    "section": "Subitem1",
+                    "link": "/subitem1",
+                    "as": "/subitem1",
+                    "icon": "",
+                    "prefetch": false
+                }
+            ]
+        },
+        {
+            "key": "title4",
+            "section": "Title4",
+            "link": "/title4",
+            "as": "/title4",
+            "icon": "bar-chart",
+            "prefetch": false,
+            "sublinks": [
+                {
+                    "key": "subitem1",
+                    "section": "Subitem1",
+                    "link": "/subitem1",
+                    "as": "/subitem1",
+                    "icon": "",
+                    "prefetch": false
+                },
+                {
+                    "key": "subitem2",
+                    "section": "Subitem2",
+                    "link": "/subitem2",
+                    "as": "/subitem2",
+                    "icon": "",
+                    "prefetch": false
+                }
+            ]
+        }
+    ]
+}

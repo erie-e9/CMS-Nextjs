@@ -1,10 +1,46 @@
 {
     "env": {
         "development": {
-            "presets": ["next/babel"]
+            "presets": ["next/babel"],
+            "plugins": [
+                ["module-resolver", {
+                    "root": ["./"],
+                    "alias": {
+                        "@components": "./src/components/pages",
+                        "@commons": "./src/components/commons",
+                        "@apps": "./src/components/apps",
+                        "@config": "./config",
+                        "@pages": "./src/pages",
+                        "@server": "./src/pages",
+                        "@shared": "./src/shared",
+                        "@styles": "./src/shared/styles",
+                        "@users": "./src/components/pages/users",
+                        "@etaui": "./src/etaui",
+                        "@svgr": "./src/components/commons/svgr"
+                    }
+                }]
+            ]
         },
         "production": {
-            "presets": ["next/babel"]
+            "presets": ["next/babel"],
+            "plugins": [
+                ["module-resolver", {
+                    "root": ["./"],
+                    "alias": {
+                        "@components": "./src/components/pages",
+                        "@commons": "./src/components/commons",
+                        "@apps": "./src/components/apps",
+                        "@config": "./config",
+                        "@pages": "./src/pages",
+                        "@server": "./src/pages",
+                        "@shared": "./src/shared",
+                        "@styles": "./src/shared/styles",
+                        "@users": "./src/components/pages/users",
+                        "@etaui": "./src/etaui",
+                        "@svgr": "./src/components/commons/svgr"
+                    }
+                }]
+            ]
         },
         "test": {
             "presets": ["next/babel"]

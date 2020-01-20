@@ -1,0 +1,510 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200111.175255.8116.0.001.json",
+    "dumpEventTime": "2020-01-11T17:52:55Z",
+    "dumpEventTimeStamp": "1578786775903",
+    "processId": 8116,
+    "cwd": "C:\\wamp\\www\\code\\CMS-Nextjs\\frontend",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\wamp\\www\\code\\CMS-Nextjs\\frontend\\node_modules\\jest-worker\\build\\workers\\processChild.js"
+    ],
+    "nodejsVersion": "v12.14.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.14.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.14.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1696,
+        "user": 1205968,
+        "nice": 0,
+        "sys": 1282625,
+        "idle": 18370062,
+        "irq": 162343
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1696,
+        "user": 912328,
+        "nice": 0,
+        "sys": 508937,
+        "idle": 19437140,
+        "irq": 36359
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1696,
+        "user": 1170656,
+        "nice": 0,
+        "sys": 811062,
+        "idle": 18876687,
+        "irq": 22093
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz",
+        "speed": 1696,
+        "user": 1256218,
+        "nice": 0,
+        "sys": 726515,
+        "idle": 18875656,
+        "irq": 14609
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "9c:d2:1e:e4:dd:e7",
+        "address": "fe80::70a7:50f4:8b76:764e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "9c:d2:1e:e4:dd:e7",
+        "address": "192.168.0.118",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "AppSoftLog"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7e57a1729",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e57a5b4c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e57a4b08",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e589369b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e60982de",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6080321",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5f4dbec",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5f55cf1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5f4b353",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5f49b24",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5f6adf5",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5cd6e19",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e64c404d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e643f804",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e652a353",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6443bdc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6441191",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6440d7c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5fa62d3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e5fa5c56",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6076ecb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e58b9dde",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e58ba087",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e58b8f5a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e585ba95",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e58b9a73",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e577667c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7e6577138",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff973337bd4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff97498ced1",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 3162112,
+    "totalCommittedMemory": 3162112,
+    "usedMemory": 2475840,
+    "availableMemory": 2145600224,
+    "memoryLimit": 2147483648,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047488,
+        "used": 1047464,
+        "available": 24
+      },
+      "old_space": {
+        "memorySize": 1159168,
+        "committedMemory": 1159168,
+        "capacity": 993616,
+        "used": 992016,
+        "available": 1600
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 152064,
+        "used": 152064,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 266240,
+        "capacity": 252000,
+        "used": 252000,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 0.031,
+    "kernelCpuSeconds": 0.031,
+    "cpuConsumptionPercent": 6.2,
+    "maxRss": 18247680,
+    "pageFaults": {
+      "IORequired": 4626,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 97
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Eric\\AppData\\Roaming",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132218755498042389",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "APPSOFTLOG",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FORCE_COLOR": "1",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Eric",
+    "INIT_CWD": "C:\\wamp\\www\\code\\CMS-Nextjs\\frontend",
+    "JEST_WORKER_ID": "2",
+    "LOCALAPPDATA": "C:\\Users\\Eric\\AppData\\Local",
+    "LOGONSERVER": "\\\\APPSOFTLOG",
+    "NODE": "C:\\Program Files\\nodejs\\node.exe",
+    "NODE_ENV": "production",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"build\"],\"original\":[\"build\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.21.1 npm/? node/v12.14.0 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_execpath": "C:\\Program Files (x86)\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "build",
+    "npm_lifecycle_script": "next build",
+    "npm_node_execpath": "C:\\Program Files\\nodejs\\node.exe",
+    "npm_package_author_email": "erictorresandrade.1@gmail.com",
+    "npm_package_author_name": "Eric Torres Andrade",
+    "npm_package_dependencies_express": "^4.17.1",
+    "npm_package_dependencies_fontfaceobserver": "^2.1.0",
+    "npm_package_dependencies_next": "^9.1.7",
+    "npm_package_dependencies_node_sass": "^4.13.0",
+    "npm_package_dependencies_react": "^16.12.0",
+    "npm_package_dependencies_react_dom": "^16.12.0",
+    "npm_package_dependencies_react_hook_form": "^4.4.5",
+    "npm_package_dependencies__next_bundle_analyzer": "^9.1.7",
+    "npm_package_dependencies__zeit_next_sass": "^1.0.1",
+    "npm_package_description": "A practical and complete boilerplate powered with NextJS + TypeScript. A bundle based on PWA + SSR + GraphQL + I18N etc...",
+    "npm_package_devDependencies_babel_plugin_module_resolver": "^4.0.0",
+    "npm_package_devDependencies_babel_preset_next": "^1.2.0",
+    "npm_package_devDependencies_cross_env": "^6.0.3",
+    "npm_package_devDependencies_next_purgecss": "^3.1.2",
+    "npm_package_devDependencies__babel_core": "^7.7.7",
+    "npm_package_devDependencies__babel_node": "^7.7.7",
+    "npm_package_devDependencies__svgr_cli": "^5.0.1",
+    "npm_package_license": "ISC",
+    "npm_package_main": "index.js",
+    "npm_package_name": "cmsfrontend",
+    "npm_package_scripts_analyze": "cross-env ANALYZE=true yarn build",
+    "npm_package_scripts_build": "next build",
+    "npm_package_scripts_dev": "babel-node src/server",
+    "npm_package_scripts_iconsgen": "real-favicon generate faviconDescription.json faviconData.json public/images/icons",
+    "npm_package_scripts_nextbe": "next build && next export",
+    "npm_package_scripts_start": "cross-env NODE_ENV=production babel-node src/server",
+    "npm_package_scripts_svg_to_jsx": "svgr < public/images/svgr/user.svg > src/components/commons/svgr/user.jsx --svgo-config public/svgo.json --replace-attr-values '#041C3F={props.color}'",
+    "npm_package_version": "1.0.0",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OPENSSL_CONF": "C:\\Program Files\\PostgreSQL\\psqlODBC\\etc\\openssl.cnf",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\Eric\\AppData\\Local\\Temp\\yarn--1578786751613-0.8425383786079679;C:\\wamp\\www\\code\\CMS-Nextjs\\frontend\\node_modules\\.bin;C:\\Users\\Eric\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Program Files\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\lib\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Users\\Eric\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs\\;C:\\Python27\\;C:\\Python27\\Scripts;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\nodejs\\;C:\\Users\\Eric\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Eric\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Eric\\AppData\\Local\\Yarn\\bin;C:\\Users\\Eric\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 69 Stepping 1, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "4501",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SynaProgDir": "Synaptics\\SynTP",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Eric\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Eric\\AppData\\Local\\Temp",
+    "USERDOMAIN": "APPSOFTLOG",
+    "USERDOMAIN_ROAMINGPROFILE": "APPSOFTLOG",
+    "USERNAME": "Eric",
+    "USERPROFILE": "C:\\Users\\Eric",
+    "windir": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}

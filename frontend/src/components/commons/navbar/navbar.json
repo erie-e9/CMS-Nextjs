@@ -1,0 +1,12 @@
+{
+    "navbarlinks": [
+        {
+            "key": "home",
+            "section": "Home",
+            "link": "/",
+            "as": "/",
+            "icon": "",
+            "prefetch": true
+        }
+    ]
+}

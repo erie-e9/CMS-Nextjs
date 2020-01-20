@@ -1,0 +1,38 @@
+@import '../../shared/styles/_dependencies.scss';
+
+$heightTextarea: 100px;
+
+.textareaWrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    @include placeholder($lightGray);
+}
+
+.textarea {
+    width: 95%;
+    max-width: 95%;
+    height: $heightTextarea;
+    max-height: $heightTextarea;
+    border: 0;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    background-color: transparent;
+    border: 1px solid $turquoise;
+    border-radius: 0px;
+    margin: 0.5rem;
+    padding: 5px 5px;
+    color: $white;
+    font-family: $poppins, sans-serif;
+    font-size: $small;
+
+        @include tablet {
+            margin: 0.7rem;
+        }
+
+        @include mobile {
+            margin: 0.4rem;
+        }
+}
